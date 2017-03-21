@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Happyrent">
+
+	<typeAlias  alias="happyrentDefaultVO" type="egovframework.example.sample.service.HappyrentDefaultVO"/>
+	<typeAlias  alias="happyrentVO" type="egovframework.example.sample.service.HappyrentVO"/>
+
+	<!-- <resultMap id="happyrentResult" class="happyrentVO">
+		<result property="type" column="type"/>
+		<result property="name" column="name"/>
+		<result property="fuel" column="fuel"/>
+		<result property="mileage" column="mileage"/>
+		<result property="fuelCode" column="fuelcode"/>
+		<result property="typeCode" column="typecode"/>
+		<result property="mileageCode" column="mileagecode"/>
+		
+		
+		<result property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="description" column="description"/>
+		<result property="useYn" column="use_yn"/>
+		<result property="regUser" column="reg_user"/>
+	</resultMap>
+ -->
+	
+	
+	<select id="happyrentDAO.selectfuel" resultClass="java.util.HashMap">
+		select cf.code fuelcode, cf.fuel fuel
+		from tbl_carfuel cf
+	</select>
+	
+	<select id="happyrentDAO.dbTime" resultClass="String">
+		select now();
+	</select>
+	
+	
+	<!-- <parameterMap class="happyrentDefaultVO" id="searchHappyrent">
+		<parameter property="typeCode" />
+		<parameter property="fuelCode"/>
+		<parameter property="mileageCode"/>
+		<parameter property="firstIndex"/>
+		<parameter property="mileageCode"/>
+	</parameterMap> -->
+	
+	
+	<select id="happyrentDAO.selectList" parameterClass="happyrentDefaultVO" resultClass="java.util.HashMap">
+		SELECT 	ttype.type type,
+				tname.name name,
+				tfuel.fuel fuel,
+				tmile.mileage mileage
+				
+		FROM	tbl_carname tname
+				inner join tbl_cartype ttype
+				on tname.typecode=ttype.code
+				inner join tbl_carmileage tmile
+				on tname.mileagecode=tmile.code
+				inner join tbl_carfuel tfuel
+				on tname.fuelcode=tfuel.code
+		<dynamic prepend="WHERE">
+			 	<isNotEmpty prepend=" AND " property="${typeCode}">
+					tname.typecode LIKE CONCAT('%',#typeCode#,'%')
+				</isNotEmpty>
+				<isNotEmpty prepend=" AND " property="${fuelCode}">
+					tname.fuelcode LIKE CONCAT('%',#fuelCode#,'%')
+				</isNotEmpty>
+				<isNotEmpty prepend=" AND " property="${mileageCode}">
+					tname.mileagecode LIKE CONCAT('%',#mileageCode#,'%')
+				</isNotEmpty>	
+		</dynamic>
+		ORDER BY tname.index desc
+		LIMIT #firstIndex#, #recordCountPerPage#
+	</select>
+	
+				<!-- <isNull  prepend=" AND " property="${typeCode}">
+					1=1  
+			    </isNull>   
+			   <isNotNull prepend=" AND "  property="${typeCode}">  
+			        tname.typecode LIKE CONCAT('%',"%$typeCode$%",'%')  
+			   </isNotNull>  
+			  	<isNull  prepend=" AND " property="${fuelCode}">
+			  		1=1  
+			    </isNull>   
+			   <isNotNull prepend=" AND "  property="${fuelCode}">  
+			        tname.fuelcode LIKE CONCAT('%',"%$fuelCode$%",'%')  
+			   </isNotNull> 
+				<isNull  prepend=" AND " property="${mileageCode}">
+					1=1  
+			    </isNull>   
+			   <isNotNull prepend=" AND "  property="${mileageCode}">  
+			        tname.mileagecode LIKE CONCAT('%',"%$mileageCode$%",'%')  
+			   </isNotNull>
+ -->	
+	
+	<select id="happyrentDAO.selectCount" parameterClass="happyrentDefaultVO" resultClass="int">
+		SELECT 	count(tname.name) 
+				
+		FROM	tbl_carname tname
+				inner join tbl_cartype ttype
+				on tname.typecode=ttype.code
+				inner join tbl_carmileage tmile
+				on tname.mileagecode=tmile.code
+				inner join tbl_carfuel tfuel
+				on tname.fuelcode=tfuel.code
+		<dynamic prepend="WHERE">
+			 	<isNotEmpty prepend=" AND " property="${typeCode}">
+					tname.typecode LIKE CONCAT('%',#typeCode#,'%')
+				</isNotEmpty>
+				<isNotEmpty prepend=" AND " property="${fuelCode}">
+					tname.fuelcode LIKE CONCAT('%',#fuelCode#,'%')
+				</isNotEmpty>
+				<isNotEmpty prepend=" AND " property="${mileageCode}">
+					tname.mileagecode LIKE CONCAT('%',#mileageCode#,'%')
+				</isNotEmpty>
+		</dynamic>
+	</select>
+				<!-- <isNotEmpty prepend=" AND " property="${typeCode}">
+					tname.typecode LIKE CONCAT('%',"%$typeCode$%",'%')
+				</isNotEmpty>
+				<isNotEmpty prepend=" AND " property="${fuelCode}">
+					tname.fuelcode LIKE CONCAT('%',"%$fuelCode$%",'%')
+				</isNotEmpty>
+				<isNotEmpty prepend=" AND " property="${mileageCode}">
+					tname.mileagecode LIKE CONCAT('%',"%$mileageCode$%",'%')
+				</isNotEmpty> -->
+				
+				
+	
+	
+				<!-- tname.typecode LIKE CONCAT('%',#{typeCode},'%') AND
+				tname.fuelcode LIKE CONCAT('%',#{fuelCode},'%') AND
+				tname.mileagecode LIKE CONCAT('%',#{mileageCode},'%') -->
+				
+	
+	<!-- 
+	<select id="happyrentDAO.selectList" parameterClass="searchVO" resultClass="egovMap">
+
+			SELECT
+				ID, NAME, DESCRIPTION, USE_YN, REG_USER
+			FROM SAMPLE
+			WHERE 1=1
+			<isEqual prepend="AND" property="searchCondition" compareValue="0">
+				ID LIKE '%' || #searchKeyword# || '%'
+			</isEqual>
+			<isEqual prepend="AND" property="searchCondition" compareValue="1">
+				NAME LIKE '%' || #searchKeyword# || '%'
+			</isEqual>
+			ORDER BY ID ASC
+			LIMIT #recordCountPerPage# OFFSET #firstIndex#		
+	</select>
+	
+	 -->
+	
+	
+	
+	<!-- <insert id="sampleDAO.insertSample">
+		<![CDATA[
+			INSERT INTO SAMPLE 
+				( ID
+				  , NAME
+				  , DESCRIPTION
+				  , USE_YN
+				  , REG_USER )
+			VALUES ( #id#
+				  , #name#
+				  , #description#
+				  , #useYn#
+				  , #regUser# )
+		]]>
+	</insert>
+	
+	<update id="sampleDAO.updateSample">
+		<![CDATA[
+			UPDATE SAMPLE
+			SET ID=#id#
+				, NAME=#name#
+				, DESCRIPTION=#description#
+				, USE_YN=#useYn#
+			WHERE ID=#id#
+		]]>
+	</update>
+	
+	<delete id="sampleDAO.deleteSample">
+		<![CDATA[
+			DELETE FROM SAMPLE 
+			WHERE ID=#id#
+		]]>
+	</delete>
+    
+    <select id="sampleDAO.selectSample" resultMap="sample">
+        <![CDATA[
+            SELECT
+                ID, NAME, DESCRIPTION, USE_YN, REG_USER
+            FROM SAMPLE 
+            WHERE ID=#id#
+        ]]>
+    </select>
+	
+	<select id="sampleDAO.selectSampleList" parameterClass="searchVO" resultClass="egovMap">
+
+			SELECT
+				ID, NAME, DESCRIPTION, USE_YN, REG_USER
+			FROM SAMPLE
+			WHERE 1=1
+			<isEqual prepend="AND" property="searchCondition" compareValue="0">
+				ID LIKE '%' || #searchKeyword# || '%'
+			</isEqual>
+			<isEqual prepend="AND" property="searchCondition" compareValue="1">
+				NAME LIKE '%' || #searchKeyword# || '%'
+			</isEqual>
+			ORDER BY ID ASC
+			LIMIT #recordCountPerPage# OFFSET #firstIndex#		
+	</select>
+	
+	<select id="sampleDAO.selectSampleListTotCnt" parameterClass="searchVO" resultClass="int">
+
+			SELECT COUNT(*) totcnt
+			FROM SAMPLE
+			WHERE 1=1
+			<isEqual prepend="AND" property="searchCondition" compareValue="0">
+				ID LIKE '%' || #searchKeyword# || '%'
+			</isEqual>
+			<isEqual prepend="AND" property="searchCondition" compareValue="1">
+				NAME LIKE '%' || #searchKeyword# || '%'
+			</isEqual>
+	</select> -->
+
+</sqlMap>

@@ -1,0 +1,433 @@
+@charset "utf-8";
+
+
+.layout_mobile {min-width:320px;}
+
+.layout_mobile #dHead , .layout_mobile #dBody, .layout_mobile #footMenu, .layout_mobile #dFoot {margin-right:0;}
+
+
+.layout_mobile #dHead .logo {
+	position:absolute; z-index:9;
+	top:10px; left:15px;
+	width:158px; height:55px;
+	background:url("/sample/images/egovframework/example/common/logo.png") no-repeat 0 0;	
+}
+.layout_mobile #dHead .logo a {display:block;height:50px;}
+.layout_mobile #dHead .logo img {display:none;}
+.layout_mobile #dHead .utility {
+	height:50px;
+	text-align:right;
+}
+.layout_mobile #dHead .utility li {display:inline-block; *display:inline; margin-left:-4px; padding-top:25px;}
+.layout_mobile #dHead .utility li a {display:inline-block; line-height:11px; padding:0 5px; border-left:1px solid #e9e9e9; font-size:11px; color:#888;}
+.layout_mobile #dHead .utility li:first-child a {border:0;}
+
+.layout_mobile #gnbMenu {
+	overflow:hidden;
+	margin-top:10px;
+	border-top:1px solid #e8e8e8;
+}
+.layout_mobile #gnbMenu li {float:left; width:33%; height:30px; border-bottom:1px solid #e8e8e8; border-left:1px solid #e8e8e8;}
+/*.layout_mobile #gnbMenu li:last-child {border-right:1px solid #e8e8e8;}*/
+.layout_mobile #gnbMenu li a {display:block; height:30px; font-weight:bold; line-height:30px; text-align:center; color:#555; background-position:18% 50%; background-repeat:no-repeat}
+.layout_mobile #gnbMenu .gm_01 a {-webkit-background-size:13px 14px; background-size:13px 14px; background-image:url("/sample/images/egovframework/example/common/bg_mGm01.png")}
+.layout_mobile #gnbMenu .gm_02 a {text-indent:3px; -webkit-background-size:14px 12px; background-size:14px 12px; background-image:url("/sample/images/egovframework/example/common/bg_mGm02.png")}
+/*.layout_mobile #gnbMenu .gm_03 {display:none;}*/
+.layout_mobile #gnbMenu .gm_03 a {-webkit-background-size:13px 13px; background-size:13px 13px; background-image:url("/sample/images/egovframework/example/common/bg_mGm03.png")}
+.layout_mobile #gnbMenu .gm_04 a {-webkit-background-size:12px 12px; background-size:12px 12px; background-image:url("/sample/images/egovframework/example/common/bg_mGm04.png")}
+.layout_mobile #gnbMenu .gm_05 a {text-indent:12px; -webkit-background-size:12px 15px; background-size:12px 15px; background-image:url("/sample/images/egovframework/example/common/bg_mGm05.png")}
+.layout_mobile #gnbMenu .gm_06 a {-webkit-background-size:12px 12px; background-size:12px 12px; background-image:url("/sample/images/egovframework/example/common/bg_mGm06.png")}
+.layout_mobile #gnbMenu .gm_07 a {text-indent:3px; -webkit-background-size:13px 12px; background-size:13px 12px; background-image:url("/sample/images/egovframework/example/common/bg_mGm07.png");}
+.layout_mobile #gnbMenu li.on a {color:#fff;}
+.layout_mobile #gnbMenu .gm_01.on a {background-image:url("/sample/images/egovframework/example/common/bg_mGm01_on.png"); background-color:#ea609f;}
+.layout_mobile #gnbMenu .gm_02.on a {background-image:url("/sample/images/egovframework/example/common/bg_mGm02_on.png"); background-color:#ab85d6;}
+.layout_mobile #gnbMenu .gm_03.on a {background-image:url("/sample/images/egovframework/example/common/bg_mGm03_on.png"); background-color:#54b2e8;}
+.layout_mobile #gnbMenu .gm_04.on a {background-image:url("/sample/images/egovframework/example/common/bg_mGm04_on.png"); background-color:#3ecca9;}
+.layout_mobile #gnbMenu .gm_05.on a {background-image:url("/sample/images/egovframework/example/common/bg_mGm05_on.png"); background-color:#9dbb33;}
+.layout_mobile #gnbMenu .gm_06.on a {background-image:url("/sample/images/egovframework/example/common/bg_mGm06_on.png"); background-color:#ffc000;}
+.layout_mobile #gnbMenu .gm_07.on a {background-image:url("/sample/images/egovframework/example/common/bg_mGm07_on.png"); background-color:#ff6f53;}
+
+.layout_mobile #dBody {
+	position:relative;
+	padding:20px 10px;
+	min-height:1%;
+}
+
+.layout_mobile #contents {
+	min-height:1%;
+	padding:0;
+}
+
+.layout_mobile #m_contents {	
+	/*background:url(/sample/images/egovframework/example/main/m_contents_bg.png) no-repeat;		*/
+	position:relative;
+	margin-left:0 !important;
+}
+
+.layout_mobile #m_contents h1 {		
+}
+
+.layout_mobile #m_contents .m_visual_mobile {margin-top:-10px;}
+.layout_mobile #m_contents .m_obj {z-index:999;width:16%}
+.layout_mobile #m_contents .m_obj img {width:100%;}
+.layout_mobile #m_contents .m_obj01 {position:absolute;top:110px;left:41.7%;}
+.layout_mobile #m_contents .m_obj02 {position:absolute;top:35%;left:61.5%;}
+.layout_mobile #m_contents .m_obj03 {position:absolute;top:62.2%;left:20.7%;}
+.layout_mobile #m_contents .m_obj04 {position:absolute;top:65.3%;left:56.6%;}
+.layout_mobile #m_contents .m_visual_mobile .main_img {width:100%;}
+.layout_mobile #m_contents .noticeWrap {position:static;}
+.layout_mobile #m_contents .m_review {display:none;}
+.layout_mobile #dBody h2 {
+	position:relative; z-index:9;
+	margin:0 0 20px 0;
+	padding:0;
+	height:auto;
+	background:#fff;
+}
+.layout_mobile #dBody h2 img {margin:0;}
+
+.layout_mobile #layerNavi {
+	margin-left:0;
+}
+.layout_mobile #layerNavi .btn_control {display:none; margin:0 -10px; padding:0; border:0;}
+
+/*.layout_mobile .btn_pageClose,*/ .layout_mobile .btn_conClose, .layout_mobile .btn_footClose, .layout_mobile .btn_detailClose  {display:none;}
+.layout_mobile .btn_pageClose {position:absolute; top:20px; right:20px;}
+.layout_mobile #aSide {
+	display:none;
+}
+
+
+.layout_mobile #footMenu {
+	position:relative; z-index:99; 
+	margin-top:-2px;
+	background:#fff;
+}
+.layout_mobile #footMenu .fmemu {overflow:hidden; border-top:1px solid #dedede;}
+.layout_mobile #footMenu .fmemu li {float:left; width:25%; border-bottom:1px solid #dedede; background:#eee;}
+.layout_mobile #footMenu .fmemu a {display:block; height:30px; line-height:30px; text-align:center; font-size:10px; letter-spacing:-1px; font-weight:bold; color:#666; border-left:1px solid #dedede;}
+.layout_mobile #footMenu .fmemu span {display:none;}
+.layout_mobile #footMenu .fmemu li:first-child a {margin-left:0; border-left:0;}
+.layout_mobile #footMenu .fmemu_con {display:none; position:relative; padding:10px; border-bottom:1px solid #e3e3e3;}
+.layout_mobile #footMenu .fmemu .active {cursor:default; background:#fff;}
+.layout_mobile #footMenu .info_image {}
+.layout_mobile #footMenu .info_image img {width:100%;}
+.layout_mobile .fmemu_con h3 {font-size:18px; font-weight:bold; color:#555; margin-bottom:8px;}
+.layout_mobile .fmemu_con .map_info {line-height:18px;}
+.layout_mobile .fmemu_con .map_info span {color:#ea609f;}
+.layout_mobile .fmemu_con .map_naver {width:100%;height:300px;margin:10px 0;}
+.layout_mobile #dFoot {
+	position:relative; z-index:99; 
+	padding:0;
+	line-height:16px;
+	background:#fff;
+	border-bottom:0;
+}
+
+.layout_mobile #dFoot h2 {position:absolute; left:-5000px; height:0; line-height:0; text-indent:-5000px;}
+.layout_mobile #dFoot address {
+	display:none;
+}
+.layout_mobile #dFoot .copyright {
+	padding:10px 0;
+	text-align:center;
+	font-size:11px;
+}
+
+/* contents */
+.layout_mobile .titH3_type02 {height:auto; margin-bottom:5px;}
+.layout_mobile .titH3_type02 em {display:block; font-size:10px;}
+.layout_mobile .tab_navi {height:auto; padding-bottom:1px; margin-bottom:10px;}
+.layout_mobile .tab_navi li {margin-bottom:-1px; width:24.8%;}
+.layout_mobile .tab_navi li a {width:100%; font-size:10px; letter-spacing:-1px; color:#555;}
+.layout_mobile .tab_navi .on a:before {display:none;}
+.layout_mobile .tab_navi .on a, .layout_mobile .tab_navi.type01 .on {color:#fff;}
+
+.layout_mobile #layerNavi .titH3_type01 {padding-top:15px;}
+
+/* 게시판 */
+.layout_mobile .paging {text-align:center; margin-top:20px;}
+.layout_mobile .paging a,.layout_mobile .paging span,.layout_mobile .paging strong {padding:0 7px;margin-left:0; display:inline-block; height:26px; border:1px solid #ebebeb; border-bottom:1px solid #d7d7d7; border-right:0; vertical-align:top; text-align:center; color:#666666; font-size:11px; line-height:27px; _line-height:26px;}
+.layout_mobile .paging strong {background:#f4f4f4; color:#f27300;}
+.layout_mobile .paging .prev {margin-right:-2px;}
+.layout_mobile .paging .next {}
+.layout_mobile .paging .prev,.layout_mobile .paging .prevEnd,.layout_mobile .paging .next,.layout_mobile .paging .nextEnd {border:none; padding:0; width:27px;}
+.layout_mobile .paging img {vertical-align:top;}
+
+.layout_mobile .board_list .num, .layout_mobile .board_list .ahor, .layout_mobile .board_list .hit, .layout_mobile .board_list .file, .layout_mobile .board_list .part {display:none;}
+.layout_mobile .board_list .cell_type01 {padding-left:5px;}
+.layout_mobile .board_list .cell_type01 .ic_notice {display:inline;}
+
+.layout_mobile .board_view .cell_data  .ahor, .layout_mobile .board_view .cell_data .hit {display:none;}
+
+.layout_mobile .thum_list .photo {float:left; margin:0 10px 10px 0; max-width:130px;}
+.layout_mobile .thum_list .cont {float:none;margin-left:130px;}
+.layout_mobile .thum_list .cont.none {margin-left:0;}
+@media screen and ( max-width:600px) {
+.layout_mobile .top_car_list {position:static;margin-top:5px;}
+}
+@media screen and ( max-width:400px) {
+.layout_mobile .thum_list .photo {margin:0 0 5px 0; text-align:center;display:block;float:none;}
+.layout_mobile .thum_list .cont {float:none;margin-left:0;}
+}
+
+.layout_mobile .thum_list .tit {font-size:14px;}
+
+.layout_mobile .tblEl_block .reviewList_block {display:none;}
+.layout_mobile .tblEl_block .board_view {width:100%; margin:0;}
+.layout_mobile .tblEl_block .cell_answer code {display:block;}
+.layout_mobile .cell_memo img {width:100%;}
+.layout_mobile .btn_tblBlock {margin-bottom:0;}
+
+.layout_mobile .event_list {border-bottom:0;}
+.layout_mobile .event_list ul {margin:0; display:block;}
+.layout_mobile .event_list li {float:none; width:auto; min-height:1%; margin:0; padding:10px 0; border-bottom:1px solid #e9e9e9;}
+.layout_mobile .event_list .photo {text-align:center;}
+.layout_mobile .event_list .photo img {width:93%; height:auto;}
+
+/*.layout_mobile .form_data .web_edit {display:none;}*/
+.layout_mobile .form_data .mobile_fn {display:block;}
+.layout_mobile .form_data th, .form_data td {display:block;}
+.layout_mobile .form_data th {color:#666; border-bottom:0;}
+.layout_mobile .form_data td, table.form_data tr:first-child td {padding-top:5px; border-bottom:1px solid #e9e9e9;}
+.layout_mobile .form_data em {display:block; margin-top:3px;}
+.layout_mobile .form_data .cha_ui th, .form_data .cha_ui td {display:table-cell;}
+
+.layout_mobile .form_data .size01 {width:25%;}
+.layout_mobile .form_data .size02 {width:90%;}
+.layout_mobile .form_data .size03 {width:60%;}
+.layout_mobile .form_data .size04 {width:92%;}
+.layout_mobile .form_data .size05 {width:20%;}
+.layout_mobile .form_data .size06 {width:14%;}
+
+.layout_mobile .btn_formBlock {margin-top:15px;}
+
+/* 대여가이드 */
+.layout_mobile .img_guide01 {background:url("/sample/images/egovframework/example/contents/visual_guide01.png") no-repeat right 40px;
+	-webkit-background-size:180px 122px;
+	background-size:180px 122px;
+}
+/*.layout_mobile .img_guide01 .txtPara_coment + .txtPara_tit, .layout_mobile .img_guide01 .txtPara_coment + .txtPara_tit + .olList_type01 {display:none;} */
+
+.layout_mobile .tab_navi + .txtPara_coment {margin-top:30px;}
+.layout_mobile .txtPara_coment img {width:50%;}
+
+.layout_mobile .imgPara_type01 img {width:50%;}
+.layout_mobile .imgPara_type01 li {-webkit-background-size:8px 14px; background-size:8px 14px;}
+.layout_mobile .imgPara_type01 li span {font-size:10px;}
+
+.layout_mobile .txtPara_type03 {width:90%;}
+
+.layout_mobile .layer_navi {height:35px; top:10px; margin-bottom:10px;}
+.layout_mobile .layer_navi span {display:none;}
+.layout_mobile .layer_navi li, .layout_mobile .layer_navi .active {-webkit-background-size:14px 17px; background-size:14px 17px;}
+.layout_mobile .layer_navi li a {height:35px; padding-top:0; line-height:13px; font-size:13px;  background-color:#fff;}
+
+.layout_mobile .img_guide04 {-webkit-background-size:180px 122px; background-size:180px 122px; background-position: right 40px;}
+.layout_mobile .guide_menu04 {height:auto;}
+.layout_mobile .guide_menu04 li {padding:0 0 15px; border-top:0;}
+.layout_mobile .guide_menu04 span {width:100%;}
+.layout_mobile .guide_menu04 li > strong img {display:none;}
+.layout_mobile .guide_menu04 li > strong:after {content:""; display:block; color:#758d20;}
+.layout_mobile .guide_menu04 li:nth-child(1) > strong:after {content:"사고현장보존";}
+.layout_mobile .guide_menu04 li:nth-child(2) > strong:after {content:"상대방 인적사항 기재";}
+.layout_mobile .guide_menu04 li:nth-child(3) > strong:after {content:"부상자 응급조치";}
+.layout_mobile .guide_menu04 li:nth-child(4) > strong:after {content:"침착하게 대처";}
+
+/* 회원관련 */ 
+.layout_mobile .img_login {background:none;}
+.layout_mobile .img_login .txtPara_coment {display:none;}
+
+.layout_mobile .tit_rentLogin {margin:20px 0 5px 0; line-height:22px; font-size:18px; color:#d14a88;}
+.layout_mobile .tit_rentLogin span {font-size:13px; color:#888;}
+.layout_mobile .para_rentLogin {line-height:18px;}
+
+.layout_mobile .login_form {position:relative; width:auto; height:100px; padding-top:20px; border-top:3px solid #fa85b9; background:url("/sample/images/egovframework/example/contents/bg_logLine.png") repeat-x 0 bottom;}
+.layout_mobile .login_form .login * {vertical-align:middle;}
+.layout_mobile .login_form .login label {display:inline-block; padding-left:5px; width:25%; font-size:12px; color:#666; font-weight:bold;}
+.layout_mobile .login_form .login li {margin-right:100px; margin-bottom:9px;}
+.layout_mobile .login_form .login .input_text {width:68%; height:21px; line-height:21px;}
+.layout_mobile .login_form .login .input_text:focus {border:1px solid #ea627f;}
+.layout_mobile .login_form .login .btn_login {position:absolute; top:17px; right:5px;}
+.layout_mobile .login_form .check {margin:5px 0 0 100px;}
+
+.layout_mobile .solution_block * {vertical-align:middle;}
+.layout_mobile .solution_block {width:auto; height:auto; margin:10px 0 0 0; padding:5px 0 2px; color:#474646; border:1px solid #e6e6e6; -webkit-border-radius:3px; background:none;}
+.layout_mobile .solution_block li {position:relative; height:auto; margin-bottom:5px; line-height:18px; padding-left:20px; font-size:11px; letter-spacing:-1px; background:url("/sample/images/egovframework/example/icon/ico_li01.gif") no-repeat 10px 50%;}
+.layout_mobile .solution_block span {display:inline-block; width:65%;}
+.layout_mobile .solution_block a {position:static; top:10px; right:23px;}
+.layout_mobile .solution_block .btn_member {display:inline-block; width:79px; height:27px; line-height:27px; text-align:center; font-size:11px; color:#fff; background:url("/sample/images/egovframework/example/btn/btn_member.png") no-repeat 0 0;}
+
+.layout_mobile .join_end {width:320px; height:200px; -webkit-background-size:320px 185px; background-size:320px 185px;}
+.layout_mobile .join_end h3 {height:66px;}
+.layout_mobile .join_end h3 img {width:300px;}
+.layout_mobile .join_end p {width:220px; padding-top:0; font-size:11px; line-height:15px;}
+.layout_mobile .join_end p br {display:none;}
+
+.mypage_titComent {display:none;}
+
+/* 차량 대여 */
+.layout_mobile .img_rent01 .txtPara_coment,.layout_mobile .img_rent01 .olList_type01,.layout_mobile .img_rent01 .txtPara_tit,.layout_mobile .img_rent01 .imgPara_rent01 {display:none;}
+.layout_mobile .img_rent01 {background:none;}
+.layout_mobile .img_rent01 h2 {margin-bottom:60px !important;}
+.layout_mobile .img_rent01 .txtPara_tit {margin-bottom:10px;}
+.layout_mobile .img_rent01 .txtPara_tit img {width:90%;}
+
+.layout_mobile .rent_reserv h3, .layout_mobile .rent_reservEnd h3 {height:21px; margin:15px 10px; font-size:14px;}
+.layout_mobile .btnCarInfor_block, .layout_mobile .rent_reserv h3 span, .layout_mobile .rent_reservEnd h3 span {display:none;}
+
+.layout_mobile .imgPara_rent01 {height:auto; background:none;}
+.layout_mobile .imgPara_rent01 img {width:50%;}
+.layout_mobile .imgPara_rent01 li {height:auto; -webkit-background-size:8px 14px; background-size:8px 14px;}
+.layout_mobile .imgPara_rent01 li:first-child {background:none;}
+.layout_mobile .imgPara_rent01 li span {font-size:10px;}
+
+.layout_mobile .rent_titComent {margin:60px 0 0 0;}
+
+.layout_mobile .rent_listShort, .layout_mobile .smart_search h3, .layout_mobile .smart_list02 {display:none;}
+.layout_mobile .smart_search + h2 {margin-bottom:60px;}
+.layout_mobile .smart_search {
+	position:absolute; overflow:hidden;
+	left:0; top:80px;
+	width:93%;
+	padding:0 10px; height:30px;
+	background:url("/sample/images/egovframework/example/contents/bg_mbSearch.png") no-repeat 0 0 #ea609f;
+	z-index:99999;
+}
+.layout_mobile .btn_smartOpen {display:block; margin:-10px 0 10px 0; padding-top:10px; border-bottom:1px solid #f6abcd;}
+.layout_mobile .btn_smartOpen a {display:block; height:30px; margin-right:20px; line-height:30px; font-weight:bold; color:#fff;  background:url("/sample/images/egovframework/example/icon/icon_arrow.png") no-repeat right 50%;}
+.layout_mobile #dBody .smart_search h2 {display:block; height:17px; margin:0; padding:10px 10px 0; background:#fff; -webkit-border-top-left-radius:5px; -webkit-border-top-right-radius:5px;}
+.layout_mobile .smart_search .mDpi_el, .layout_mobile .smart_mbTxt {display:block;}
+.layout_mobile .smart_search .smart_coment {height:21px; padding:0 0 0 12px; line-height:21px; background:#fff;}
+.layout_mobile .smart_search .smart_list {overflow:hidden; margin:0; padding:10px 0; background:#fbdcea; opacity:0.8; -webkit-border-bottom-left-radius:5px; -webkit-border-bottom-right-radius:5px;}
+.layout_mobile .smart_search .smart_list li {float:none; margin:0; padding:5px 0 5px 5px; min-height:20px; border-top:0; border-top:1px solid #e2a1bf;}
+.layout_mobile .smart_search .smart_list li:first-child {padding:5px 0 5px 5px; border:0;}
+.layout_mobile .smart_search .smart_list span {display:inline-block; vertical-align:middle;}
+.layout_mobile .smart_search .smart_list span:first-child {width:45px; letter-spacing:-1px; color:#983964;}
+.layout_mobile .smart_search .sel_size01 {width:20%; margin-top:3px;}
+.layout_mobile .smart_search .input_size01 {width:90%;}
+.layout_mobile .smart_search .input_size02 {width:38%;}
+.layout_mobile .smart_search .btn_smart {margin-top:10px; text-align:center;}
+.layout_mobile .smart_search .btn_smart a {display:inline-block; width:204px; height:40px; line-height:38px; text-align:center; font-weight:bold; font-size:14px; color:#983964; background:url("/sample/images/egovframework/example/btn/btn_smart.png") no-repeat 0 0;}
+.layout_mobile .smart_search .btn_smart a:hover, .layout_mobile .smart_search .btn_smart a:focus {color:#fff; background-image:url("/sample/images/egovframework/example/btn/btn_smart_on.png");}
+.layout_mobile .smart_search .smart_list br {display:none;}
+.layout_mobile .smart_search .smart_mbTxt {margin-top:10px; line-height:20px; letter-spacing:-1px;}
+.layout_mobile .smart_search .smart_mbTxt p {margin-bottom:5px; font-size:13px; font-weight:bold; color:#fff; }
+.layout_mobile .smart_search .smart_mbTxt li {font-size:11px; color:#fff; }
+
+.layout_mobile .rentCar_list * {vertical-align:middle; }
+.layout_mobile .rentCar_list li {float:none; width:auto; height:auto; background:#f9f9fb;}
+.layout_mobile .rentCar_list .item {height:95px; margin-left:20px; text-align:left;}
+.layout_mobile .rentCar_list .photo img {width:60px; height:46px; margin-top:5px;}
+.layout_mobile .rentCar_list .car_charge_m {display:block;}
+.layout_mobile .rentCar_list ul {position:absolute; z-index:3; top:33px; left:73px; height:1%; padding-top:5px;}
+.layout_mobile .rentCar_list ul li {border:0; width:auto; height:auto;}
+.layout_mobile .rentCar_list .price01, .layout_mobile .rentCar_list .price03, .layout_mobile .rentCar_list .price04 {display:none;}
+.layout_mobile .rentCar_list .price05, .layout_mobile .rentCar_list .price07, .layout_mobile .rentCar_list .price08 {display:inline-block; margin-bottom:0; font-size:13px;}
+.layout_mobile .rentCar_list .price06 {display:inline-block; font-size:12px;}
+
+.layout_mobile .liOver_block  {display:block; width:100%; min-height:40px; background:none; border:0;}
+.layout_mobile .liOver_block .memo {display:none;}
+.layout_mobile a.btn_rentView {width:93px; margin:0 0 0 -10px; text-indent:0; background:url("/sample/images/egovframework/example/btn/btn_reserv.png") no-repeat right 0;}
+
+.layout_mobile .elUi_reservAll {margin:0; background:none;padding-bottom:30px;}
+.layout_mobile .elUi_reserv01, .layout_mobile .elUi_reserv02, .layout_mobile .elUi_reserv03, .layout_mobile .elUi_reserv04 {float:none; clear:both; width:100%; padding-bottom:20px; background:none;}
+.layout_mobile .elUi_reserv02 .premiumCover {display:none;}
+
+.layout_mobile .rent_reserv .tab_resrv {margin:0 0 10px;}
+.layout_mobile .rent_reserv .tab_resrv li span {width:96px; font-size:10px; letter-spacing:-1px;}
+
+.layout_mobile .rent_reserv h4, .layout_mobile .rentCar_detail h4, .layout_mobile .rent_reviewView h4, .layout_mobile .premium_detail h4, .layout_mobile .premium_reviewView h4, .layout_mobile .premium_dataView h4
+{height:24px; line-height:24px; margin-bottom:10px; background:#f9f9fb; border-top:1px solid #e8e8e8; border-bottom:1px solid #e8e8e8;}
+
+.layout_mobile .history_ui {min-height:1%; margin:10px; padding-left:0;}
+.layout_mobile .history_ui h5 {margin-top:10px; font-size:14px;}
+.layout_mobile .history_ui .gallery {position:static; top:15px; left:0; text-align:center;}
+.layout_mobile .history_ui .txt {padding-bottom:10px;}
+
+.layout_mobile .rent_reserv .btn_block {margin-top:-34px;}
+
+.layout_mobile .reservTbl_el .posi01,.layout_mobile .reservTbl_el .posi02 {float:none; width:100%;}
+.layout_mobile .reservTbl_el .posi02 {float:none;}
+
+.layout_mobile .tbl_check {padding:0 0 20px 10px; word-spacing:-1px;}
+
+.layout_mobile .reserv_agree {float:none; width:100%;}
+
+.layout_mobile .btn_reservArea {width:100%; bottom:10px;}
+
+.layout_mobile .rent_reservEnd {margin:10px; background:none;}
+.layout_mobile .rent_reservEnd .txtPara_tit img {width:88%;}
+.layout_mobile .rent_reservEnd h3 {margin:0 0 12px 0;}
+
+.layout_mobile .rentCar_detail, .layout_mobile .rent_reviewView  {margin:0; padding-bottom:0; background:none;}
+.layout_mobile .rent_reviewList, .layout_mobile .rent_data, .layout_mobile .rent_tip {float:none; width:100%; min-height:1%; padding:0 0 20px 0; border-left:0;}
+
+.layout_mobile .rentCar_detail .btn_more {top:7px;}
+
+.layout_mobile .rentCar_view {width:auto; padding:15px; min-height:1%; margin:0 auto 0; text-align:center;}
+.layout_mobile .rentCar_view h3 {font-size:16px;}
+.layout_mobile .rentCar_view .gallery {position:static; height:auto;}
+.layout_mobile .rentCar_view .gallery p {margin-left:0; text-align:center;}
+.layout_mobile .rentCar_view .gallery p img {width:150px; height:140px;}
+.layout_mobile .rentCar_view .gallery ul {display:none;}
+.layout_mobile .rentCar_view .rent_price { text-align:center;margin:0 auto;}
+.layout_mobile .rentCar_view .btn a {margin-right:0;}
+
+.layout_mobile .rent_reviewView .reviewList_block {float:none; width:100%;}
+.layout_mobile .rent_reviewView .board_view {display:none;}
+
+/* 프리미엄 */
+.layout_mobile .layer_con {}
+.layout_mobile .titPara_coment {display:none;}
+.layout_mobile .titPara_coment + .tab_navi li {width:19.8%;}
+.layout_mobile .premium_list * {vertical-align:middle; }
+.layout_mobile .premium_list li {float:none; width:auto; height:auto; background:#f9f9fb;}
+.layout_mobile .premium_list .item {height:65px; margin-left:20px; text-align:left;}
+.layout_mobile .premium_list .photo img {width:60px; height:46px; margin-top:8px;}
+.layout_mobile .premium_list li:hover .item {border:0;}
+.layout_mobile .premium_list ul {position:absolute; z-index:3; top:33px; left:73px; height:1%; padding-top:0;}
+.layout_mobile .premium_list ul li {border:0; width:auto; height:auto;}
+.layout_mobile .premium_list .price01 {display:inline-block; margin-bottom:0; font-size:13px;}
+.layout_mobile .premium_list .price02 {display:inline-block; font-size:12px;}
+
+.layout_mobile .premium_view {width:auto; min-height:1%; padding:10px;}
+.layout_mobile .premium_view h3 {margin-top:15px; font-size:16px;}
+.layout_mobile .premium_view .gallery {position:static; height:auto; margin-top:5px;}
+.layout_mobile .premium_view .gallery p {margin-left:0; text-align:center;}
+.layout_mobile .premium_view .gallery p img {width:290px; height:270px;}
+.layout_mobile .premium_view .gallery ul {overflow:hidden; position:static; margin:10px 0 0 25px;height:100px;}
+.layout_mobile .premium_view .gallery li {float:left; border:1px solid #eee;}
+.layout_mobile .premium_view .gallery a {display:inline; border:0;}
+.layout_mobile .premium_view .gallery a:hover {border:0;}
+
+.layout_mobile .premium_detail, .layout_mobile .premium_reviewView, .layout_mobile .premium_dataView {margin:0; background:none;}
+.layout_mobile .premium_reviewList, .layout_mobile .premium_data {float:none; min-height:1%; width:100%; padding-bottom:20px;}
+
+.layout_mobile .premium_detail .btn_more {top:5px;}
+
+.layout_mobile .premium_reviewView .reviewList_block {float:none; width:100%;}
+.layout_mobile .premium_reviewView .board_view {display:none;}
+
+.layout_mobile .premium_dataView {height:350px;}
+.layout_mobile .slider_gallery {width:320px; height:320px; margin:20px auto 0;}
+.layout_mobile .slider_gallery .slider {width:320px; height:320px;}
+.layout_mobile .slider_gallery .slider img {width:318px; height:237px;}
+.layout_mobile .slider_gallery .slider p {width:318px; line-height:13px; padding-left:3px; font-size:10px; text-align:left;}
+.layout_mobile .slider_gallery .btn_conterl .pre {left:5px; z-index:1;}
+.layout_mobile .slider_gallery .btn_conterl .nxt  {right:5px; z-index:1;}
+
+/* 푸터 */
+.layout_mobile #footMenu .txtPara_coment img {width:80%;}
+.layout_mobile #footMenu .txtPara_company01 {-webkit-background-size:320px 135px; background-size:320px 135px; padding-top:145px;}
+
+/*이용약관*/
+.layout_mobile .service_lnb_wrap{line-height:20px;}
+.layout_mobile .service-lnb {float:none; padding:20px;border-top:3px solid #545e6d;background:#f1f3f6;margin-bottom:20px;}
+.layout_mobile .service-lnb dl {overflow:hidden;}
+.layout_mobile .service-lnb a {text-decoration:none;}
+.layout_mobile .service-lnb dt,.service-lnb dd {margin:0;padding-bottom:10px;margin-bottom:10px;background: url(/sample/images/egovframework/example/etc/bg_aside.gif) bottom repeat-x;}
+.layout_mobile .service-lnb dt a {color:#6e91c6;font-weight:bold;}
+.layout_mobile .service-lnb dd a {color:#444444;}
+.layout_mobile .service-lnb_cont{float:none;}
+.layout_mobile .service-lnb_cont h1{font-size:18px; color:#0d3676;}

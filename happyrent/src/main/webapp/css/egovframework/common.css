@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* {margin:0; padding:0; vertical-align:top;}
+
+body,p,div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,select,button,code,label, em {
+font-family:"맑은고딕",Malgun Gothic,"나눔고딕",Nanum Gothic,돋움, Dotum, AppleGothic, sans-serif; color:#666; font-size:12px; word-break:break-all;}
+/*
+@font-face {
+    font-family: 'NanumGothic';
+    font-style: normal;
+	src:url("../font/NanumGothic.eot");
+	src: local('NanumGothic'),  local('나눔고딕'),   url('../font/NanumGothic.woff') format('woff'),
+    url('../font/NanumGothic.ttf')format("truetype");
+}
+*/
+form {display:inline; margin:none;}
+img, fieldset {border:0;}
+hr {display:none;}
+li {list-style:none;}
+em {font-style:normal;}
+caption {display:none;}
+legend {font-size:0; position:absolute; left:-5000px;}
+a:link, a:active, a:visited, a {text-decoration:none; color:#666; outline: none;}
+a:hover {text-decoration:none; color:#333;}
+
+textarea, select, input.input_text, input.input_file {border:1px solid #dfdfdf;  background:#ededed;}
+input, select {vertical-align:middle;}
+select {height:18px;}
+textarea {padding:5px; resize: none;}
+
+input.input_text  {text-indent:5px; height:18px; line-height:18px; }
+input.input_radio {width:12px; height:12px; vertical-align:middle; margin-right:4px; margin-top:-3px;}
+input.input_check {width:12px; height:12px; vertical-align:middle; margin-right:4px; margin-top:-2px;}
+input.input_file  {height:18px; line-height:18px;}
+
+.input_space {display:inline-block; width:15px; height:18px; line-height:18px; font-size:16px;color:#e5e5e5;}
+.invisible {position:absolute; left:-5000px; height:0; line-height:0;}
+
+#pageLink {position:absolute; width:950px; top:0; margin:0 auto; z-index:99999999;}
+#pageLink li {display:inline;}
+#pageLink a, #pageTop a {display:inline-block; height:0; overflow:hidden; text-align:center;}
+#pageLink a:hover, #pageLink a:focus, #pageLink a:active, #pageTop a:hover, #pageTop a:focus, #pageTop a:active {height:auto;}
+#pageTop {position:relative; width:930px; margin:0 auto; z-index:99999999;}
+
+#mask {position:absolute;left:0;top:0;z-index:9999;background-color:#000;display:none;}
+.tright {text-align:right;}
+/* 마진 */
+.mgt05 {margin-top:5px !important;}
+.mgt10 {margin-top:10px !important;}
+.mgt15 {margin-top:15px !important;}
+.mgt20 {margin-top:20px !important;}
+.mgt30 {margin-top:30px !important;}
+.mgt40 {margin-top:40px !important;}
+
+.mgb05 {margin-bottom:5px !important;}
+.mgb10 {margin-bottom:10px !important;}
+.mgb15 {margin-bottom:15px !important;}
+.mgb20 {margin-bottom:20px !important;}
+.mgb25 {margin-bottom:25px !important;}
+.mgb30 {margin-bottom:30px !important;}
+.mgb40 {margin-bottom:40px !important;}
+.mgb50 {margin-bottom:50px !important;}
+.mgb60 {margin-bottom:60px !important;}
+.mgb75 {margin-bottom:75px !important;}
+
+.mgl05 {margin-left:5px !important;}
+.mgl10 {margin-left:10px !important;}
+.mgl20 {margin-left:20px !important;}
+.mgl30 {margin-left:30px !important;}
+.mgl40 {margin-left:40px !important;}
+
+.mgr05 {margin-right:5px !important;}
+.mgr10 {margin-right:10px !important;}
+.mgr20 {margin-right:20px !important;}
+.mgr30 {margin-right:30px !important;}
+.mgr40 {margin-right:40px !important;}

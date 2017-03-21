@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+@import url('style.css');
+
+.layout_web #dBody {
+	min-height:660px; 
+	padding-left:340px;
+}
+.layout_web #dBody h2 {
+	background:url("/sample/images/egovframework/example/title/img_rent.png") no-repeat 105px 10px;
+}
+
+.layout_web #contents {
+	min-height:700px;
+}
+
+.layout_web #layerNavi {
+	margin-left:-340px;
+}
+
+/* smart search */
+.smart_search {
+	position:absolute; z-index:10; top:0; left:70px; 
+	width:230px; height:100%; 
+	background:url("/sample/images/egovframework/example/contents/bg_smart.png") no-repeat 0 0 #ea609f;
+}
+.smart_search h2, .smart_mbTxt, .btn_smartOpen {display:none;}
+.smart_search .input_text, .smart_search select {height:19px; line-height:19px;  color:#fff; border:1px solid #a65b7e; border-right:0; border-bottom:0; background:#cf729d;}
+.smart_search .smart_coment {height:21px; padding:50px 0 0 30px; font-size:11px;}
+.smart_search .smart_list {margin:0 14px 2px; background:url("/sample/images/egovframework/example/contents/bg_smartBoxB.png") no-repeat 0 bottom;}
+.smart_search .smart_list li {margin:0 1px; padding:10px 0 10px 13px; border-top:1px solid #e2a1bf;}
+.smart_search .smart_list li:first-child {padding-top:15px; padding-bottom:14px; border:0;}
+.smart_search .smart_list span {display:inline-block; vertical-align:middle;}
+.smart_search .smart_list span:first-child {width:45px; letter-spacing:-1px; color:#983964;}
+.smart_search .smart_list .rental_time {color:#fff;line-height:18px;}
+.smart_search .smart_list .rental_time strong {font-size:16px;}
+.smart_search .smart_list .white {color:#fff;font-weight:bold;}
+.smart_search .sel_size01 {width:60px; margin-top:3px;}
+.smart_search .input_size01 {width:124px;}
+.smart_search .input_size02 {width:100px;}
+.smart_search .btn_smart {text-align:center;}
+.smart_search .btn_smart a {display:inline-block; width:204px; height:40px; line-height:38px; text-align:center; font-weight:bold; font-size:14px; color:#983964; background:url("/sample/images/egovframework/example/btn/btn_smart.png") no-repeat 0 0;}
+.smart_search .btn_smart a:hover, .smart_search .btn_smart a:focus {color:#fff; background-image:url("/sample/images/egovframework/example/btn/btn_smart_on.png");}
+.smart_search h3 {height:20px; margin:19px 0 0 14px; font-size:11px; color:#fff;}
+.smart_search .smart_list02 {position:relative; margin:0 14px 2px; background:url("/sample/images/egovframework/example/contents/bg_smartBoxB02.png") no-repeat 0 bottom;}
+.smart_search .smart_list02 ul {overflow:hidden; padding:1px 0 0 1px; background:url("/sample/images/egovframework/example/contents/bg_smartBoxT02.png") no-repeat 0 0;}
+.smart_search .smart_list02 li {float:left; width:66px; height:25px; text-align:center; line-height:25px; border-left:1px solid #c55387; border-bottom:1px solid #c55387;}
+.smart_search .smart_list02 a {display:inline-block; width:66px; height:25px; color:#832e55;}
+.smart_search .smart_list02 a:hover, .smart_search .smart_list02 a.on {color:#b8668c; background:#fff;}
+.smart_search .smart_list02 .item01 {border-left:0;}
+.smart_search .smart_list02 .item02 {border-left:0; border-bottom:0;}
+.smart_search .smart_list02 .type01 li, .smart_search .smart_list02 .type01 li a {width:32px;}
+.smart_search .smart_list02 .type01 li:first-child, .smart_search .smart_list02 .type01 li:first-child a {width:35px;}
+.smart_search .smart_list02 .type02 li, .smart_search .smart_list02 .type02 li a {width:54px;}
+.smart_search .smart_list02 .type02 li:first-child, .smart_search .smart_list02 .type02 li:first-child a {width:35px;}
+.smart_search .bin01 {position:absolute; top:0; left:0;}
+.smart_search .bin02 {position:absolute; bottom:0; left:0;}
+.smart_search .mDpi_el {display:none;}
+
+/* contents */
+.tab_navi .on a {background:#9dbb33; border:1px solid #97b13c;}
+.tab_navi .on a:before {background:url("/sample/images/egovframework/example/contents/bg_tabOn05.png") no-repeat 0 0;}
+
+.img_rent01 {background:url("/sample/images/egovframework/example/contents/visual_rent01.png") no-repeat 370px 135px;}
+
+.imgPara_rent01 {overflow:hidden; width:98%; margin-top:27px; height:124px; background:url("/sample/images/egovframework/example/contents/bg_boxR.png") no-repeat right 0;}
+.imgPara_rent01 li {float:left; width:25%; height:104px; padding-top:20px; text-align:center; text-indent:2%; background:url("/sample/images/egovframework/example/icon/ico_arrow03.png") no-repeat 0 50%;}
+.imgPara_rent01 li:first-child {background:url("/sample/images/egovframework/example/contents/bg_boxL.png") no-repeat 0 0;}
+.imgPara_rent01 span {display:inline-block; margin-top:5px; color:#666;}
+
+.rent_titComent {height:69px; margin:-69px 0 0 217px; line-height:18px; letter-spacing:-1px;}
+.rent_titComent strong {color:#ea609f; /* background:url("/sample/images/egovframework/example/icon/ico_refer.png") no-repeat right 0;*/}
+
+/* rent car search list */
+.rent_listShort * {vertical-align:middle;}
+.rent_listShort {overflow:hidden; margin-bottom:20px; border:1px solid #e6e6e6; background:#f9f9fb;}
+.rent_listShort li {float:left; padding:6px 15px 6px 10px; border-left:1px solid #e6e6e6;}
+.rent_listShort li:first-child {border-left:0;}
+.rent_listShort li span {display:inline-block; color:#666;}
+.rent_listShort li > span {padding-right:10px;}
+.rent_listShort .btn_short {display:inline-block; margin-right:-5px; background:url("/sample/images/egovframework/example/btn/btn_shortR.png") no-repeat right 0;}
+.rent_listShort .btn_short span {position:relative; left:-2px; height:22px; padding:0 23px 0 10px; line-height:22px; font-size:11px; color:#f2f1ec; background:url("/sample/images/egovframework/example/btn/btn_shortL.png") no-repeat 0 0;}
+.rent_listShort .btn_short.on {position:relative; z-index:2; background-image:url("/sample/images/egovframework/example/btn/btn_shortR_on.png")}
+.rent_listShort .btn_short.on span {color:#444; background-image:url("/sample/images/egovframework/example/btn/btn_shortL_on.png");}
+
+.rentCar_list {overflow:hidden; padding-bottom:1px; border-left:1px solid #e6e6e6;}
+/*.rentCar_list.none {border-left:none;text-align:center;}*/
+.rentCar_list li {position:relative; float:left; width:195px; height:268px; margin-bottom:-1px; border:1px solid #e6e6e6; border-left:0;}
+.rentCar_list.noData {border:0;}
+.rentCar_list.noData li {float:none;width:100%;padding:30px 0;border:0;text-align:center;height:60px;}
+.rentCar_list .item {height:191px; text-align:center;}
+.rentCar_list .ico {position:absolute; top:0; left:0;}
+.rentCar_list .photo img {width:195px; height:150px;}
+.rentCar_list .kind {margin:12px 0 10px 0; color:#666;}
+.rentCar_list .kind img {vertical-align:middle; margin-right:5px;}
+
+.rentCar_list ul {height:63px; padding-top:14px; background:#f9f9fb; border:0;}
+.rentCar_list ul li {border:0; width:112px; height:18px; padding-left:5px;}
+.rentCar_list ul span {font-size:11px;}
+.rentCar_list .price01 {width:60px; height:33px; padding:15px 6px 0 0; line-height:18px; font-size:11px; text-align:right; border-right:1px solid #e0e0e0;}
+.rentCar_list .type01 .price02,.rentCar_list .type02 .price03,.rentCar_list .type03 .price04 {font-weight:bold; color:#000;}
+.rentCar_list .price02 span {font-weight:normal !important; color:#ca246f;}
+.rentCar_list .price03 span {font-weight:normal !important; color:#ff7200;}
+.rentCar_list .price04 span {font-weight:normal !important; color:#54b2e8;}
+.rentCar_list .price05, .rentCar_list .price06, .rentCar_list .price07, .rentCar_list .price08 {width:auto; float:none; text-align:center;}
+.rentCar_list .price05, .rentCar_list .price07, .rentCar_list .price08 {margin-bottom:7px; font-size:19px; color:#ca246f;}
+.rentCar_list .type01 .price05 {color:#ca246f;} /*폭풍 */
+.rentCar_list .type02 .price05 {color:#ff7200;} /*특가 */
+.rentCar_list .type03 .price05 {color:#54b2e8;} /*할인 */
+.rentCar_list .price05 strong, .rentCar_list .price07 strong, .rentCar_list .price08 strong {color:#000;}
+.rentCar_list .price06 {font-size:14px;}
+.rentCar_list .price07 {color:#54b2e8;}
+.rentCar_list .price08 {color:#ff7200;}
+.rentCar_list .car_charge_m {display:none;}
+
+.rentCar_list .item:hover .liOver_block, .rentCar_list .item:focus .liOver_block {display:block;}
+.liOver_block {display:none; position:absolute; left:0; bottom:0; z-index:2; width:195px; min-height:76px; text-align:left; background:#eb68a4; border-top:1px solid #d05b90;}
+.liOver_block .memo {padding:5px; line-height:18px; font-size:11px; color:#fff;}
+.liOver_block .btn {padding:4px 5px 5px;}
+a.btn_reserv.end {color:#fff;}
+a.btn_reserv, a.btn_rentView {display:inline-block; height:31px; line-height:31px; text-align:center; font-weight:bold; color:#983964;}
+a.btn_reserv {width:92px; background:url("/sample/images/egovframework/example/btn/btn_reserv.png") no-repeat right 0;}
+a.btn_reserv:first-child {width:93px; background-position:0 0;}
+a.btn_reserv.end {cursor:default; background-image:url("/sample/images/egovframework/example/btn/btn_reserv_on.png")}
+a.btn_rentView {width:185px; margin-top:4px; text-indent:20px; background:url("/sample/images/egovframework/example/btn/btn_rentView.png") no-repeat 0 0;}
+
+/* rent cat detail infor */
+#layerNavi .btn_control .pre {position:absolute; left:-45px; top:265px;}
+#layerNavi .btn_control .nxt {position:absolute; right:-45px; top:265px;}
+.rentCar_view {position:relative; width:375px; min-height:270px; margin:0 auto 50px; padding-left:400px;}
+.rentCar_view .gallery {position:absolute; top:0; left:0; height:270px;}
+.rentCar_view .gallery p {margin-left:83px;}
+.rentCar_view .gallery p img {width:290px; height:270px;}
+.rentCar_view .gallery ul {position:absolute; bottom:0; left:0; height:270px;}
+.rentCar_view .gallery ul.type02 {left:-80px;}
+.rentCar_view .gallery li {width:60px; height:60px; margin-bottom:5px;}
+.rentCar_view .gallery li img {width:56px; height:56px; border:2px solid #fff;}
+.rentCar_view .gallery a {display:inline-block; width:58px; height:58px; border:1px solid #f5f5f5;}
+.rentCar_view .gallery a:hover,.rentCar_view .gallery a.on {border:1px solid #ea609f;}
+.rentCar_view .gallery a:hover img,.rentCar_view .gallery a.on img {border:2px solid #ea609f;}
+.rentCar_view h3 {font-size:24px; color:#494949;}
+.rentCar_view h3 + p {margin-top:5px; color:#ea609f;}
+.rentCar_view .rent_price * {vertical-align:middle;}
+.rentCar_view .rent_price {overflow:hidden; width:216px; height:88px; margin-top:20px; padding-left:100px; background:url("/sample/images/egovframework/example/contents/bg_rentPrice.png") no-repeat 0 0;}
+.rentCar_view .rent_price li {float:left; width:131px; margin-bottom:5px;  padding-left:15px;}
+.rentCar_view .type01 .price02 code,.rentCar_view .type02 .price03 code,.rentCar_view .type03 .price04 code {font-weight:bold;font-size:13px; color:#000;}
+.rentCar_view .rent_price .price01 {width:70px; height:61px; padding:25px 0 0 0; line-height:18px;}
+.rentCar_view .rent_price .price02 {padding-top:15px;}
+.rentCar_view .rent_price .price02 span {color:#ca246f !important;}
+.rentCar_view .rent_price .price03 span {color:#ff7200 !important;}
+.rentCar_view .rent_price .price04 span {color:#54b2e8 !important;}
+.rentCar_view .service {margin-top:10px; line-height:20px;}
+.rentCar_view .service strong {color:#444;}
+.rentCar_view .btn {margin-top:15px;}
+
+.rentCar_detail {overflow:hidden; margin:0 -54px -60px; background:url("/sample/images/egovframework/example/contents/bg_detail.gif") repeat-x 0 0;}
+.rentCar_detail h4, .rent_reviewView h4  {height:42px; line-height:42px; margin-bottom:20px; padding:0 20px; font-size:13px; color:#ea609f;}
+.rentCar_detail .btn_more {position:absolute; top:17px; right:19px; font-size:11px; letter-spacing:-1px; color:#888;}
+.rentCar_detail .btn_more:hover {color:#444;}
+
+.rent_reviewList, .rent_data, .rent_tip {float:left; position:relative; min-height:350px; width:33%; padding-bottom:30px; border-left:1px solid #e8e8e8;}
+.rent_reviewList {border-left:0;}
+.rent_reviewList .review_list {margin:0 20px;}
+
+.rent_data {} 
+.rent_data .data_tableH {width:90%; margin:0 auto;}
+.rent_tip p {margin:0 20px; line-height:18px;}
+
+.rent_reviewView {overflow:hidden; position:relative; display:none; margin:-380px -54px 0; padding-bottom:60px; background:url("/sample/images/egovframework/example/contents/bg_detail.gif") repeat-x 0 0 #fff; min-height:500px;}
+.rent_reviewView .btn_detailClose {position:absolute; top:17px; right:19px;}
+.rent_reviewView .reviewList_block {float:left; margin:0 3%; width:31%;}
+.rent_reviewView .board_view {float:left; width:60%}
+.rent_reviewView .board_view h5 {font-size:20px;}
+
+.tbl_rentBtn {padding:10px 0; margin:-6px -5px -6px; text-align:center; background:#f0f0f0;}
+.tbl_rentBtn .btn_rentView {margin:0 0 0 7px;}
+
+.toltip_block {position:relative;}
+.toltip {display:none; position:absolute; top:5%; left:65% ;z-index:999999;  cursor:default; width:158px; letter-spacing:-1px; background:url("/sample/images/egovframework/example/contents/bg_toltipB.png") no-repeat 0 bottom;}
+.toltip em {position:relative; top:-5px; display:block; padding:11px 5px 8px 13px; color:#666; line-height:18px; background:url("/sample/images/egovframework/example/contents/bg_toltipt.png") no-repeat 0 0;}
+
+.board_view {border-top:2px solid #eb78ac;}
+
+/* reservation service */
+.rent_reserv {}
+.rent_reserv h3 *, .rent_reservEnd h3 * {vertical-align:middle;}
+.rent_reserv h3, .rent_reservEnd h3 {height:41px; margin:0 -34px; font-size:22px; color:#444;}
+.rent_reserv h3 span, .rent_reservEnd h3 span {font-size:12px; font-weight:normal; color:#999;}
+.rent_reserv .tab_resrv {overflow:hidden; margin:0 -34px 30px;}
+.rent_reserv .tab_resrv li {float:left;  text-align:center; background:url("/sample/images/egovframework/example/contents/bg_tabReserv.png") repeat-x 0 0;}
+.rent_reserv .tab_resrv li span {display:inline-block; margin-left:-17px; font-weight:bold; width:186px; height:29px; line-height:29px; font-size:14px; color:#999; background:url("/sample/images/egovframework/example/contents/bg_tabArrow.png") no-repeat right 0;}
+.rent_reserv .tab_resrv .on span {color:#fff; background:url("/sample/images/egovframework/example/contents/bg_tabReserv_on.png") no-repeat 0 0;}
+.rent_reserv .tab_resrv li:first-child {border-left:1px solid #dad9da;} 
+.rent_reserv .tab_resrv .on:first-child span {background:url("/sample/images/egovframework/example/contents/bg_tabReserv02_on.png") no-repeat right 0;} 
+.rent_reserv .tab_resrv .last span {border-right:1px solid #dad9da; background:none;}
+.rent_reserv .tab_resrv .last.on {border-right:1px solid #e36294;}
+.rent_reserv .tab_resrv .last.on span {background:url("/sample/images/egovframework/example/contents/bg_tabReserv03_on.png") no-repeat right 0;}
+
+.rent_reserv .btnCarInfor_block {position:absolute; right:15px; top:70px;}
+
+.elUi_reservAll {position:relative; overflow:hidden; margin:0 -54px -60px;  background:url("/sample/images/egovframework/example/contents/bg_detail.gif") repeat-x 0 0;min-height:600px;}
+.elUi_reserv01, .elUi_reserv02, .elUi_reserv03, .elUi_reserv04 {float:left; padding-bottom:60px; background:url("/sample/images/egovframework/example/contents/img_line.png") repeat-y 0 0; min-height:600px;}
+.elUi_reserv01 {width:40.05%; margin-right:-1px; padding-bottom:20px; background:url("/sample/images/egovframework/example/contents/img_line.png") repeat-y right 0;}
+.elUi_reserv02 {width:30%; }
+.elUi_reserv03 {width:30%; background:url("/sample/images/egovframework/example/contents/img_line.png") repeat-y 0 0;}
+.elUi_reserv04 {width:70.05%; margin-right:-1px;  background:url("/sample/images/egovframework/example/contents/img_line.png") repeat-y right 0;}
+
+.rent_reserv h4 {clear:both; height:42px; line-height:42px; margin-bottom:20px; padding:0 20px; font-size:13px; color:#ea609f; border-left:1px solid #e8e8e8; background:url("/sample/images/egovframework/example/contents/bg_detail.gif") repeat-x 0 0;}
+.rent_reserv h4 * {vertical-align:middle;}
+.rent_reserv h4 img {margin-top:-4px;}
+.elUi_reservAll > h4, .elUi_reserv01:first-child h4, .elUi_reserv04 h4 {border-left:0;}
+.rent_reserv table {width:94%; margin:0 auto 20px;}
+.history_ui {position:relative; min-height:200px; margin:20px; padding-left:160px;}
+.history_ui h5 {font-size:20px; color:#494949;}
+.history_ui .gallery {position:absolute; top:15px; left:0; text-align:center;}
+.history_ui .gallery img {width:140px; height:140px;}
+.history_ui .gallery a {display:inline-block; width:118px; height:33px; line-height:33px; margin-top:10px; font-weight:bold; color:#666; text-align:center; background:url("/sample/images/egovframework/example/btn/btn_chaCar.png") no-repeat 0 0;}
+.history_ui .txt {float:left; margin-top:10px;  line-height:18px;}
+.history_ui .txt li {font-size:11px;}
+.history_ui .txt strong {letter-spacing:0; color:#444;}
+.history_ui .rent_priceUi {position:relative; height:124px; margin-top:10px; background:url("/sample/images/egovframework/example/contents/bg_rentPrice02.png") no-repeat right 0;}
+.history_ui .rent_price * {vertical-align:middle;}
+.history_ui .rent_price {height:124px; padding-left:15px; background:url("/sample/images/egovframework/example/contents/bg_rentPrice03.png") no-repeat 0 0;}
+.history_ui .rent_price li {height:20px; padding-bottom:5px;}
+.history_ui .type01 .price02,.history_ui .type02 .price03,.history_ui .type03 .price04 {font-weight:bold; color:#000;}
+.history_ui .rent_price strong {font-size:17px; letter-spacing:-1px; color:#000;}
+.history_ui .rent_price .price01 {height:37px; line-height:37px;}
+.history_ui .rent_price .price02 {padding-top:10px;}
+.history_ui .rent_price .price02 span {color:#ca246f;}
+.history_ui .rent_price .price03 span {color:#ff7200;}
+.history_ui .rent_price .price04 span {color:#54b2e8;}
+.elUi_reserv02 .revcheck {margin:0 20px;}
+.elUi_reserv03 .resev_charge {margin:0 20px 20px; border-top:1px solid #eb78ac;}
+.resev_charge h5 {height:29px; padding-left:10px; line-height:29px; color:#666; background:#f9f9fb; border-bottom:1px solid #e6e6e6;}
+.resev_charge ul {padding:15px; line-height:18px; border-bottom:1px solid #e6e6e6;}
+.resev_charge li {position:relative;}
+.resev_charge li span {position:absolute; right:0; top:0;}
+.resev_charge .total {overflow:hidden; height:50px; padding-right:5px; margin-top:20px; line-height:50px; background:url("/sample/images/egovframework/example/contents/bg_reservTotalR.png") no-repeat right 0;}
+.resev_charge .total span {float:left; width:50%; height:50px; text-align:center; font-weight:bold; font-size:16px; color:#fff; background:url("/sample/images/egovframework/example/contents/bg_reservTotal.png") no-repeat 0 0;}
+.resev_charge .total strong {float:left; width:49%; text-align:right; font-size:22px; letter-spacing:-1px; color:#000; background:url("/sample/images/egovframework/example/contents/bg_reservTotal02.png") no-repeat 0 0;}
+.rent_reserv .btn_block {margin:-50px 0 15px 0; margin-right:10px;text-align:right;}
+.elUi_reserv03 .sale {margin:0 20px 100px; line-height:18px;}
+
+.tbl_check {padding:0 0 20px 20px;}
+
+.reserv_txtComent {margin:0 20px; line-height:18px;}
+.reserv_txtComent strong{font-weight:normal; color:#a29066;}
+
+.reservTbl_el {overflow:hidden; margin:20px 20px 0;}
+.reservTbl_el .posi01, .reservTbl_el .posi02 {float:left; width:49%;}
+.reservTbl_el .posi02 {float:right;}
+.reservTbl_el table {width:100%;}
+.reservTbl_el h5 {position:relative; height:30px; padding-left:10px; margin-bottom:-1px; line-height:30px; font-weight:bold; text-align:left; color:#a37187; border-top:1px solid #eb78ac; border-bottom:1px solid #e7d8df; background:#faf1f5;}
+
+.reservAgree_blcok {overflow:hidden; margin-left:20px;}
+.reserv_agree {float:left; width:48%; margin:0 2% 30px 0;}
+.reserv_agree h5 {height:25px; font-size:14px; color:#666;}
+.reserv_agree .insert {height:140px; margin-bottom:10px; border:1px solid #e5e5e5; overflow-y:scroll;padding:20px;}
+.reserv_agree .insert .red {color:#f00;}
+
+.btn_reservArea {position:absolute; width:30%; right:0; bottom:60px; text-align:center;}
+.btn_fromArea {clear:both; margin-top:20px; padding-bottom:60px; text-align:center;}
+
+.rent_reservEnd {margin:0 -34px; background:url("/sample/images/egovframework/example/contents/visual_rent01.png") no-repeat right 65px;}
+.rent_reservEnd h3 {margin:0 0 12px 0;}
+
+a.btn_carInfor {display:inline-block; text-align:center; font-weight:bold; color:#fff; width:110px; height:30px; line-height:30px; background:url("/sample/images/egovframework/example/btn/btn_carInfor.png") no-repeat 0 0;}
