@@ -192,10 +192,10 @@
 		
 		carSearch();
 		
-		
-		
-		
-		console.log("on.load", $(document).on("#pageIndex").val());
+		console.log($(document).contens().find("#pageIndex").val());
+		$(window).on("load", "#pageIndex", function() {
+			console.log("#pageIndex", $(this).val());
+		})
 		
 		console.log("$(window).scrollTop(): ", $(window).scrollTop());
 		console.log("$(document).height(): ", $(document).height());
