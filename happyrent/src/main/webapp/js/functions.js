@@ -155,8 +155,10 @@
         	
         	$("#contents").load("rentalsearch.do #body",stringData);
         }//End carSearch()
-        
-        
+       
+       
+       
+       
         function ajaxData(data){
         	//Start Ajax
         	$.ajax({
