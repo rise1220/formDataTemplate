@@ -20,12 +20,13 @@ import java.util.List;
 import egovframework.example.sample.service.EgovSampleService;
 import egovframework.example.sample.service.SampleDefaultVO;
 import egovframework.example.sample.service.SampleVO;
-
 import egovframework.rte.fdl.property.EgovPropertyService;
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 
 import javax.annotation.Resource;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -56,6 +57,8 @@ import org.springmodules.validation.commons.DefaultBeanValidator;
 
 @Controller
 public class EgovSampleController {
+	
+	private static final Logger LOGGER = LoggerFactory.getLogger(EgovSampleController.class); 
 
 	/** EgovSampleService */
 	@Resource(name = "sampleService")
@@ -99,11 +102,6 @@ public class EgovSampleController {
 		int totCnt = sampleService.selectSampleListTotCnt(searchVO);
 		paginationInfo.setTotalRecordCount(totCnt);
 		model.addAttribute("paginationInfo", paginationInfo);
-		
-		SampleVO sampleVO = new SampleVO();
-		
-		System.out.println(sampleVO.toString());
-		System.out.println(paginationInfo);
 
 		return "sample/egovSampleList";
 	}
@@ -132,7 +130,7 @@ public class EgovSampleController {
 	@RequestMapping(value = "/addSample.do", method = RequestMethod.POST)
 	public String addSample(@ModelAttribute("searchVO") SampleDefaultVO searchVO, SampleVO sampleVO, BindingResult bindingResult, Model model, SessionStatus status)
 			throws Exception {
-
+		
 		// Server-Side Validation
 		beanValidator.validate(sampleVO, bindingResult);
 
@@ -215,3 +213,5 @@ public class EgovSampleController {
 	}
 
 }
+
+

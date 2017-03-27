@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
 
-<sqlMap namespace="Sample">
+<sqlMap namespace="sampleDAO">
 
 	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
 	<typeAlias  alias="searchVO" type="egovframework.example.sample.service.SampleDefaultVO"/>
@@ -14,7 +14,7 @@
 		<result property="regUser" column="reg_user"/>
 	</resultMap>
 
-	<insert id="sampleDAO.insertSample">
+	<insert id="insertSample">
 		<![CDATA[
 			INSERT INTO SAMPLE 
 				( ID
@@ -30,7 +30,7 @@
 		]]>
 	</insert>
 	
-	<update id="sampleDAO.updateSample">
+	<update id="updateSample">
 		<![CDATA[
 			UPDATE SAMPLE
 			SET ID=#id#
@@ -48,7 +48,7 @@
 		]]>
 	</delete>
     
-    <select id="sampleDAO.selectSample" resultMap="sample">
+    <select id="selectSample" resultMap="sample">
         <![CDATA[
             SELECT
                 ID, NAME, DESCRIPTION, USE_YN, REG_USER
@@ -57,7 +57,7 @@
         ]]>
     </select>
 	
-	<select id="sampleDAO.selectSampleList" parameterClass="searchVO" resultClass="egovMap">
+	<select id="selectSampleList" parameterClass="searchVO" resultClass="egovMap">
 
 			SELECT
 				ID, NAME, DESCRIPTION, USE_YN, REG_USER
@@ -73,7 +73,7 @@
 			LIMIT #recordCountPerPage# OFFSET #firstIndex#		
 	</select>
 	
-	<select id="sampleDAO.selectSampleListTotCnt" parameterClass="searchVO" resultClass="int">
+	<select id="selectSampleListTotCnt" parameterClass="searchVO" resultClass="int">
 
 			SELECT COUNT(*) totcnt
 			FROM SAMPLE

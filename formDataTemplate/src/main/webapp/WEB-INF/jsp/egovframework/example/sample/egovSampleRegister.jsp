@@ -54,6 +54,7 @@
                 return;
             }else{
             	frm.action = "<c:url value="${registerFlag == 'create' ? '/addSample.do' : '/updateSample.do'}"/>";
+            	frm.method = "POST";
                 frm.submit();
             }
         }

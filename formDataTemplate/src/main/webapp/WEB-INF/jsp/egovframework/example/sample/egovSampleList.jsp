@@ -37,6 +37,7 @@
         /* 글 등록 화면 function */
         function fn_egov_addView() {
            	document.listForm.action = "<c:url value='/addSample.do'/>";
+           	document.listForm.method = "GET";
            	document.listForm.submit();
         }
         
@@ -58,7 +59,10 @@
 </head>
 
 <body style="text-align:center; margin:0 auto; display:inline; padding-top:100px;">
-    <form:form commandName="searchVO" id="listForm" name="listForm" method="post">
+
+	<h1>${paginationInfo}</h1>
+
+    <form:form commandName="searchVO" id="listForm" name="listForm">
         <input type="hidden" name="selectedId" />
         <div id="content_pop">
         	<!-- 타이틀 -->
