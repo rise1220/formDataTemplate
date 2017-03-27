@@ -157,8 +157,6 @@
         }//End carSearch()
         
         
-        
-        
         function ajaxData(data){
         	//Start Ajax
         	$.ajax({
