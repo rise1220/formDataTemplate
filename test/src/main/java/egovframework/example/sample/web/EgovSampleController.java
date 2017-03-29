@@ -108,7 +108,7 @@ public class EgovSampleController {
 	@RequestMapping(value="/login.do")
 	public String login(HttpSession session){
 		session.setAttribute("loggin", "true");
-		session.setMaxInactiveInterval(60*5);
+		session.setMaxInactiveInterval(60);
 		return "forward:/egovSampleList.do";
 	}
 	
